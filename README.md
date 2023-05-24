@@ -32,9 +32,11 @@ matrix with small non-overlaping bins times cells on the reference genome (GRCh3
 ### An example of CCNMF analysis of simulated paired scRNA and scDNA data
 
 [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb)
+'''
 ### An example of CCNMF analysis of real paired scRNA and scDNA data from a cell mixture:
 
 [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/Real_data_analysis.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/Real_data_analysis.ipynb)
+'''
 
 ## Reference
 Xiangqi Bai, Zhana Duren, Lin Wan and Li C. Xia. [Joint Inference of Clonal Structure using Single-cell Genome and Transcriptome Sequencing Data, bioRxiv](https://www.biorxiv.org/content/10.1101/2020.02.04.934455v2)
