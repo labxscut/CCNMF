@@ -40,6 +40,8 @@ devtools::install_github("XQBai/CCNMF")
 ### Run CCNMF
 * The pipeline using CCNMF to analyze P5931 is aviailable at [CCNMF/example/P5931/Run_CCNMF.R](https://github.com/XQBai/CCNMF/tree/master/example/P5931/Run_CCNMF.R).
 
+*** 
+
 ## Simulation
 ### Generate simulated paired scDNA and scRNA
 
