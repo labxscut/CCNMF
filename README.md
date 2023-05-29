@@ -28,16 +28,16 @@ devtools::install_github("XQBai/CCNMF")
 * The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
 
 ### Run CCNMF
-* The pipeline using CCNMF to analyze NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
+* The pipeline using CCNMF to analyze NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87/Run_CCNMF.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87/Run_CCNMF.R).
 
 ## Analyze primay gastric cancer P5931
 
 ### Preprocess data
 
-* The preprocessing pipeline is as [example/NCI-N87/NCI_N87_preprocess.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/NCI_N87_preprocess.R).
+* The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/P5931](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/P5931).
 
 ### Run CCNMF
-* The pipeline using CCNMF to analyze P5931 is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
+* The pipeline using CCNMF to analyze P5931 is aviailable at [CCNMF/example/P5931/Run_CCNMF.R](https://github.com/XQBai/CCNMF/tree/master/example/P5931/Run_CCNMF.R).
 
 ## Simulation
 ### Generate simulated paired scDNA and scRNA
