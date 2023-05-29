@@ -17,9 +17,9 @@ devtools::install_github("XQBai/CCNMF")
 
 * Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus, [(GEO accession number GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
 
-* Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository, [accession number PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
+* Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository [PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
-* The raw data can be accessed from [NCI_N87 raw data] (https://github.com/labxscut/CCNMF/releases/tag/raw_data). 
+* The raw data can be accessed from [NCI_N87 raw data](https://github.com/labxscut/CCNMF/releases/tag/raw_data). 
 
 ### Preprocess data
 
