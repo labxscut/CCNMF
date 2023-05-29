@@ -13,15 +13,16 @@ devtools::install_github("XQBai/CCNMF")
 ```
 
 ## Analyze gastric cancer NCI-N87 cell line
-
 ### Raw data
 
 * Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus, [(GEO accession number GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
 
-* Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository, [accession number PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]). Then we utilized Cellranger-DNA pipeline to convert raw FASTQ files to copy number variants
-matrix with small non-overlaping bins times cells on the reference genome (GRCh38). The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
+* Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository, [accession number PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
 ### Processed data
+
+* 
+* The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
 
 ### Running CCNMF
 * The pipeline using CCNMF to analyzed paired single-cell NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
