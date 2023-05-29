@@ -19,25 +19,26 @@ devtools::install_github("XQBai/CCNMF")
 
 * Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository, [accession number PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
-### Processed data
+### Preprocess data
 
 * The preprocessing pipeline is as [example/NCI-N87/NCI_N87_preprocess.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/NCI_N87_preprocess.R).
 * The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
 
-### Running CCNMF
+### Run CCNMF
 * The pipeline using CCNMF to analyzed paired single-cell NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
 
-### Reference of Gastric cancer NCI-N87 cell line data 
+### Reference
 * Noemi Andor, Billy T Lau, Claudia Catalanotti, Anuja Sathe, Matthew Kubit, Jiamin Chen, Cristina Blaj, Athena Cherry, Charles D Bangs, Susan M Grimes, Carlos J Suarez, Hanlee P Ji, Joint single cell DNA-seq and RNA-seq of gastric cancer cell lines reveals rules of in vitro evolution, NAR Genomics and Bioinformatics, Volume 2, Issue 2, June 2020, lqaa016, https://doi.org/10.1093/nargab/lqaa016
 
 ## Simulation
-### Generated simulated paired scDNA and scRNA
+### Generate simulated paired scDNA and scRNA
 
 * [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb)
 
+<! -- 
 ### Run CCNMF analysis on simulated data
-
 * [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb)
+-->
 
 <!-- 
 ### An example of CCNMF analysis of real paired scRNA and scDNA data from a cell mixture:
