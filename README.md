@@ -19,6 +19,8 @@ devtools::install_github("XQBai/CCNMF")
 
 * Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository, [accession number PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
+* The raw data can be accessed from [NCI_N87 raw data] (https://github.com/labxscut/CCNMF/releases/tag/raw_data). 
+
 ### Preprocess data
 
 * The preprocessing pipeline is as [example/NCI-N87/NCI_N87_preprocess.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/NCI_N87_preprocess.R).
