@@ -27,16 +27,18 @@ devtools::install_github("XQBai/CCNMF")
 ### Running CCNMF
 * The pipeline using CCNMF to analyzed paired single-cell NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
 
-* Gastric cancer NCI-N87 cell line data was referenced from: Noemi Andor, Billy T Lau, Claudia Catalanotti, Anuja Sathe, Matthew Kubit, Jiamin Chen, Cristina Blaj, Athena Cherry, Charles D Bangs, Susan M Grimes, Carlos J Suarez, Hanlee P Ji, Joint single cell DNA-seq and RNA-seq of gastric cancer cell lines reveals rules of in vitro evolution, NAR Genomics and Bioinformatics, Volume 2, Issue 2, June 2020, lqaa016, https://doi.org/10.1093/nargab/lqaa016
+### Reference of Gastric cancer NCI-N87 cell line data 
+* Noemi Andor, Billy T Lau, Claudia Catalanotti, Anuja Sathe, Matthew Kubit, Jiamin Chen, Cristina Blaj, Athena Cherry, Charles D Bangs, Susan M Grimes, Carlos J Suarez, Hanlee P Ji, Joint single cell DNA-seq and RNA-seq of gastric cancer cell lines reveals rules of in vitro evolution, NAR Genomics and Bioinformatics, Volume 2, Issue 2, June 2020, lqaa016, https://doi.org/10.1093/nargab/lqaa016
 
-## Examples
-### An example of paired scDNA and scRNA simulation:
+## Simulation
+### Generated simulated paired scDNA and scRNA
 
-[https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb)
+* [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/SimulationProcedures.ipynb)
 
-### An example of CCNMF analysis of simulated paired scRNA and scDNA data
+### Run CCNMF analysis on simulated data
 
-[https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb)
+* [https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb](https://nbviewer.jupyter.org/github/XQBai/CCNMF/blob/master/notebooks/CCNMF_analyze_simulated_data.ipynb)
+
 <!-- 
 ### An example of CCNMF analysis of real paired scRNA and scDNA data from a cell mixture:
 
