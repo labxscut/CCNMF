@@ -15,7 +15,7 @@ devtools::install_github("XQBai/CCNMF")
 ## Analyze gastric cancer NCI-N87 cell line
 ### Raw data
 
-* Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus, [(GEO accession number GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
+* Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus, [(GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
 
 * Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository [PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
