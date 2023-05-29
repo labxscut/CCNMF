@@ -15,7 +15,7 @@ devtools::install_github("XQBai/CCNMF")
 ## Analyze gastric cancer NCI-N87 cell line
 ### Raw data
 
-* Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus, [(GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
+* Download NCI-N87 single-cell RNA-seq data from Gene Expression Omnibus [(GSE142750)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM4238683).
 
 * Download NCI-N87 single-cell DNA-seq FASTQ files from National Institute of Health’s SRA repository [PRJNA498809](https://www.ncbi.nlm.nih.gov/sra/SRX4943580[accn]).  
 
@@ -28,10 +28,16 @@ devtools::install_github("XQBai/CCNMF")
 * The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
 
 ### Run CCNMF
-* The pipeline using CCNMF to analyzed paired single-cell NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
+* The pipeline using CCNMF to analyze NCI-N87 cell line datasets is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
 
-### Reference
-* Noemi Andor, Billy T Lau, Claudia Catalanotti, Anuja Sathe, Matthew Kubit, Jiamin Chen, Cristina Blaj, Athena Cherry, Charles D Bangs, Susan M Grimes, Carlos J Suarez, Hanlee P Ji, Joint single cell DNA-seq and RNA-seq of gastric cancer cell lines reveals rules of in vitro evolution, NAR Genomics and Bioinformatics, Volume 2, Issue 2, June 2020, lqaa016, https://doi.org/10.1093/nargab/lqaa016
+## Analyze primay gastric cancer P5931
+
+### Preprocess data
+
+* The preprocessing pipeline is as [example/NCI-N87/NCI_N87_preprocess.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/NCI_N87_preprocess.R).
+
+### Run CCNMF
+* The pipeline using CCNMF to analyze P5931 is aviailable at [CCNMF/example/NCI_N87_pipeline.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87_pipeline.R).
 
 ## Simulation
 ### Generate simulated paired scDNA and scRNA
