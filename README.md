@@ -21,7 +21,7 @@ devtools::install_github("XQBai/CCNMF")
 
 * The raw data can be accessed from [NCI_N87 raw data](https://github.com/labxscut/CCNMF/releases/tag/raw_data). 
 
-### Preprocess data
+<u> ### Preprocess data </u>
 * The preprocessing pipeline is as [example/NCI-N87/NCI_N87_preprocess.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/NCI_N87_preprocess.R).
 
 * The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
