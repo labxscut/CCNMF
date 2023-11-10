@@ -1,0 +1,58 @@
+Package: CCNMF
+Type: Package
+Title: CCNMF: A Coupled-Clone Nonnegative Matrix Factorization Method for Integrating Tumor Single-Cell RNA and DNA Sequencing Data
+Version: 2.2.0
+Author: person("Xiangqi", "Bai", email = "xiangqi@stanford.edu", role = c("aut", "cre"))
+Maintainer: The package maintainer <xiangqi@stanford.edu>
+Description: CCNMF joinly cluster the single-cell RNA-seq and single-cell DNA-seq from the same cancer by NMF. Then the ientified clones of copy number varients in scDNA-seq can be corresoponded to the subpopulations of gene expression in scRNA-seq.
+License: MIT + file LICENSE
+Standardizable: FALSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends:
+  NMF (>= 0.21.0),
+  Matrix,
+  dplyr
+Imports:
+  methods,
+  ggplot2 (>= 3.2.1),
+  ComplexHeatmap,
+  S4Vectors,
+  RcppHungarian,
+  mixtools,
+  rlang,
+  RColorBrewer,
+  Rtsne,
+  circlize,
+  preprocessCore,
+  uwot,
+  cowplot,
+  ggplotify,
+  stringr,
+  grid
+Suggests:
+  biomaRt,
+  lsa,
+  mixdist,
+  readxl,
+  mclust,
+  devtools,
+  Biobase,
+  cli,
+  tidyr,
+  pheatmap,
+  heatmaply,
+  IRanges,
+  minerva,
+  data.table,
+  Hmisc,
+  gtools,
+  tibble,
+  plyr,
+  gplots,
+  shiny,
+  TxDb.Hsapiens.UCSC.hg19.knownGene,
+  TxDb.Hsapiens.UCSC.hg38.knownGene,
+  org.Hs.eg.db,
+  GenomicRanges
