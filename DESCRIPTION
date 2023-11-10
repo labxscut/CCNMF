@@ -11,11 +11,11 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
 Depends:
-  NMF (>= 0.21.0),
-  Matrix,
-  dplyr
+  NMF (>= 0.21.0)
 Imports:
   methods,
+  dplyr,
+  Matrix (>= 1.3-4),
   ggplot2 (>= 3.2.1),
   ComplexHeatmap,
   S4Vectors,
