@@ -9,7 +9,7 @@
 
 ```
 install.packages('devtools')
-devtools::install_github("XQBai/CCNMF")
+devtools::install_github("labxscut/CCNMF")
 ```
 
 ## Analyze gastric cancer NCI-N87 cell line
