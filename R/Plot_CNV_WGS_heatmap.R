@@ -1,5 +1,4 @@
 #' @title Plot Subclonal CNV heatmap
-#' @import RColorBrewer
 #' @param CNVsample copy number data matrix with all genes, dimension: cells
 #' @param label subclones labeling of CCNMF
 #' @param Gene_Order dataframe of genes locs

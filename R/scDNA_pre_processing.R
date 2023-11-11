@@ -25,7 +25,7 @@ Merge_bins2segments <- function(scdna_matrix, bin_size=50){
     dplyr::mutate(bin_corrected = genome_reference$bin_corrected) %>%
     dplyr::group_by(.data$chr, .data$bin_corrected, .drop = FALSE) %>%
     dplyr::summarise_all(list(median)) %>%
-    ungroup() %>%
+    dplyr::ungroup() %>%
     dplyr::filter(.data$chr!='chrX' & .data$chr!='chrY') %>%
     dplyr::select(-c('chr', 'start', 'end', 'bin', 'bin_corrected'))
 

@@ -1,4 +1,3 @@
-
 #' Input the gene expression matrix which is from 10X
 #' @importFrom Matrix readMM
 #' @importFrom utils read.table
@@ -14,11 +13,11 @@ InputRNA <- function(pathRNA, file_gene = 'genes.tsv', file_barcodes = 'barcodes
 
   # Parse gene expression data first
   if(is(pathRNA, 'character') & is(file_gene, 'character') & is(file_barcodes, 'character') || is(file_matrix, 'character')){
-    RNAmatrix <- Matrix::readMM(file.path(pathRNA, file_matrix))
-    genes <- utils::read.table(file.path(pathRNA, file_gene))
-    barcodes <- utils::read.csv(file.path(pathRNA, file_barcodes), header = FALSE)
+    RNAmatrix <- readMM(file.path(pathRNA, file_matrix))
+    genes <- read.table(file.path(pathRNA, file_gene))
+    barcodes <- read.csv(file.path(pathRNA, file_barcodes), header = FALSE)
     RNAmatrix <- as.matrix(RNAmatrix)
-    #rownames(RNAmatrix) <- levels(barcodes$V1)
+
     rownames(RNAmatrix) <- genes$V1
     colnames(RNAmatrix) <- barcodes$V1
   }else{
@@ -28,6 +27,8 @@ InputRNA <- function(pathRNA, file_gene = 'genes.tsv', file_barcodes = 'barcodes
 }
 
 #' Input the copy number copy in scDNA-seq data, which is a csv file.
+#' @importFrom utils read.csv
+#' @importFrom utils read.table
 #' @param pathDNA the path of the CNV file located
 #' @param file_CNV the name of the CNV file. csv file is suggested.
 #' @param Verbose the CNV files is cnvcalls of cellrangers: Otherwise, the Verbose is FALSE when the cnv file is .csv file as the format of example data.
@@ -37,9 +38,9 @@ InputRNA <- function(pathRNA, file_gene = 'genes.tsv', file_barcodes = 'barcodes
 #' @export
 InputDNA <- function(pathDNA, file_CNV, Verbose = TRUE){
   if(Verbose == FALSE & is(pathDNA, 'character') & is(file_CNV, 'character')){
-    CNVmatrix <- utils::read.csv(file.path(pathDNA, file_CNV))
+    CNVmatrix <- read.csv(file.path(pathDNA, file_CNV))
   }else if(Verbose == TRUE & is(pathDNA, 'character') & is(file_CNV, 'character')){
-    CNVmatrix <- utils::read.table(file.path(pathDNA, file_CNV))
+    CNVmatrix <- read.table(file.path(pathDNA, file_CNV))
     List_index <- Handle_string(rownames(CNVmatrix))
     chr <- List_index$chr
     start <- List_index$start

@@ -1,9 +1,9 @@
 #' Run CCNMF function
 #' Run \code{CCNMF} accross a range pf initializations
-#'
-#' @importFrom preprocessCore 'normalize.quantiles.robust'
-#' @importFrom RcppHungarian 'HungarianSolver'
+#' @importFrom preprocessCore normalize.quantiles.robust
+#' @importFrom RcppHungarian HungarianSolver
 #' @importFrom stats runif
+#' @importFrom lsa cosine
 #' @param ncluster the number of subpopulations/clones seted by users
 #' @param RNAmatrix A matrix of gene expression in scRNA-seq
 #' @param CNVmatrix A matrix of copy number in scDNA-seq

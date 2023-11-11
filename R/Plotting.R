@@ -1,16 +1,10 @@
-
 #' Output the all visualization of results from CCNMF
 #' Especially, the paired heatmap of differential genes and dimension reduction for both scRNA-seq and scDNA-seq data
-#' @import ggplot2
-#' @import cowplot
-#' @import ggplotify
-#'
 #' @description Output the all visualization of results from CCNMF
 #' @importFrom Rtsne Rtsne
 #' @importFrom uwot umap
-#' @import ggplot2
-#' @import grDevices
-#'
+#' @importFrom ggplot2 ggsave
+#' @importFrom cowplot plot_grid
 #' @param CNVmatrix copy number matrix
 #' @param RNAmatrix gene expression matrix
 #' @param Result_CCNMF The result of CCNMF
@@ -35,7 +29,7 @@ PlotMainResult <- function(CNVmatrix, RNAmatrix, Result_CCNMF){
 #' The rows in Data matrix represent the cells, the columns represent the genes/chr bins
 #'
 #' Plot the dimensional reduction figure by PCA
-#' @import stats
+#' @importFrom stats prcomp
 #' @param Data the orgial matrix or H matrix when the raw matrix after NMF
 #' @param label the clusters label of this figure which is the result of CCNMF
 #' @param Datatype The type of input Data matrix, 'scRNA-seq' or 'scDNA-seq'
@@ -52,7 +46,7 @@ Plotpca <- function(Data, label, title, Datatype = 'scRNA-seq'){
 #' Plot the dimensional reduction figure by tsne
 #' Before tsne, the PCA is applied to the original Data, then select the top 15 PCs and apply
 #' tsne to these components.
-#' @import stats
+#' @importFrom stats prcomp
 #' @param Data the orgial matrix or H matrix when the raw matrix after NMF
 #' @param label the clusters label of this figure which is the result of CCNMF
 #' @param Datatype The type of input Data matrix, 'scRNA-seq' or 'scDNA-seq'
@@ -78,7 +72,7 @@ Plottsne <- function(Data, label, title, Datatype = 'scRNA-seq', need_PCA = TRUE
 
 #' Plot the dimensional reduction figure by umap
 #' Firstly, we apply PCA for the high-dimensional data, then use Umap to the top 15 PCs.
-#' @import stats
+#' @importFrom stats prcomp
 #' @param Data the orgial matrix or H matrix when the raw matrix after NMF
 #' @param label the clusters label of this figure which is the result of CCNMF
 #' @param Datatype The type of input Data matrix, 'scRNA-seq' or 'scDNA-seq'
