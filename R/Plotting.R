@@ -21,7 +21,7 @@ PlotMainResult <- function(CNVmatrix, RNAmatrix, Result_CCNMF){
   RNAdim <- Plottsne(H2, S2, 'tSNE plot of scRNA-seq data', Datatype = 'scRNA-seq', need_PCA = FALSE)
 
   myplot <- plot_grid(DNAdim, RNAdim, labels = c('A', 'B'), label_size = 12, scale = c(1, 1))
-  ggsave(filename ='Dim_plot.pdf', plot = myplot, width = 10, height = 4.5)
+  ggsave(filename ='CCNMF_Tsne_plot.pdf', plot = myplot, width = 10, height = 4.5)
 }
 
 
@@ -97,6 +97,7 @@ Plotumap <- function(Data, label, Datatype = 'scRNA-seq', need_PCA = TRUE){
 
 #' The function of plotting figure
 #' @import ggplot2
+#' @importFrom rlang .data
 #' @param Data the input data which need to be plotted, which can be raw matrix or H matrix concluded by NMF
 #' @param Clones the clusters label
 #' @param title the title of the figure, which is a string
@@ -110,7 +111,7 @@ Plot <- function(Data, Clones, title, labelx,  labely){
   colnames(Data) <- c('V1', 'V2')
   # ncluster <- max(Cluster)
   # Clones <- paste0('C', Cluster, sep='')
-  myplot <- ggplot(data = Data, ggplot2::aes(x = Data$V1, y=Data$V2, color = Clones)) +
+  myplot <- ggplot(data = Data, ggplot2::aes(x = .data$V1, y= .data$V2, color = Clones)) +
     geom_point(size = 0.5) +
     theme_classic() +
     labs(title= title, x = labelx, y= labely, fill = 'Clones') +

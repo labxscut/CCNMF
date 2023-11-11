@@ -60,7 +60,7 @@ Plot_CNV_subclone_heatmap <-function(CNVsample, label, Gene_Order, index_remain_
   gene_chr_mark = c(0, cumsum(gene_chr$lengths))[seq_along(gene_chr$lengths)]+1
   names(gene_chr_mark) = gene_chr$values
 
-  Plot_CNV_heatmap(mat, Labels, gene_chr_mark, 'Subclones_figure.pdf', is.noise)
+  Plot_CNV_heatmap(mat, Labels, gene_chr_mark, 'scDNA_subclones.pdf', is.noise)
 }
 
 #' @title Sort subclones
