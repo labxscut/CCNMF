@@ -27,7 +27,7 @@ devtools::install_github("labxscut/CCNMF")
 * The processed scDNA-seq and scRNA-seq matrics are available at [CCNMF/data/processed_data/NCI_N87](https://github.com/XQBai/CCNMF/tree/master/data/processed_data/NCI_N87).
 
 ### Run CCNMF
-* The pipeline using CCNMF to analyze NCI-N87 cell line datasets is available at [CCNMF/example/NCI_N87/Run_CCNMF.R](https://github.com/XQBai/CCNMF/tree/master/example/NCI_N87/Run_CCNMF.R).
+* The pipeline using CCNMF to analyze NCI-N87 cell line datasets is available at [CCNMF/example/NCI_N87/Run_CCNMF.R](https://github.com/labxscut/CCNMF/blob/main/example/NCI-N87/run_CCNMF.R).
 
 *** 
 
