@@ -39,7 +39,7 @@ CNVmatrix <- CNVmatrix[selected_genes, ]
 path <- '/data/'
 raw_count <- InputRNA(file.path(path, 'NCI_N87/scRNA/'))
 ## Select the cell barcode for downstream analysis
-cells_Gphase <- readRDS('/mnt/ix1/Projects/M070_200622_GI_multiomics/Integrated/CCNMF_test/CCNMF_code_2022/NCI-N87/data/RNAsample_G.rds')
+cells_Gphase <- readRDS('./processed_data/NCI-N87/RNAsample_G.rds')
 raw_count_G <- raw_count[, colnames(cells_Gphase)]
 RNA_normalize <- Normalize_RNA(raw_count_G, gene_locs)
 selected_genes <- Iden_signal_segments(RNA_normalize)
